@@ -1,0 +1,108 @@
+<robot name="Arb">
+
+  <!-- Fix Link -->
+  <link name="base_link">
+    <visual>
+      <origin xyz="0 0 0.0375" rpy="0 0 0"/>
+      <geometry>
+        <cylinder length="0.075" radius="0.01"/>
+      </geometry>
+    </visual>
+  </link>
+
+  <!-- Link 1 -->
+  <link name="link1">
+    <visual>
+      <origin xyz="0 0 0.0225" rpy="0 0 0"/>
+      <geometry>
+        <cylinder length="0.045" radius="0.01"/>
+      </geometry>
+    </visual>
+  </link>
+
+  <!-- Joint 1 -->
+  <joint name="joint1" type="revolute">
+    <parent link="base_link"/>
+    <child link="link1"/>
+    <axis xyz="0 0 1"/>
+    <origin xyz="0 0 0.075" rpy="0 0 -1.570796"/>
+<limit effort="1000.0" lower="0" upper="3.141593" velocity="0.001"/>
+  </joint>
+
+  <!-- Link 2 -->
+  <link name="link2">
+    <visual>
+      <origin xyz="0 0 0.07" rpy="0 0 0"/>
+      <geometry>
+        <cylinder length="0.14" radius="0.01"/>
+      </geometry>
+    </visual>
+  </link>
+
+  <!-- Joint 2 -->
+  <joint name="joint2" type="revolute">
+    <parent link="link1"/>
+    <child link="link2"/>
+    <axis xyz="1 0 0"/>
+    <origin xyz="0 0 0.045" rpy="-1.570796 0 0"/>
+<limit effort="1000.0" lower="0" upper="3.141593" velocity="0.001"/>
+  </joint>
+
+  <!-- Link 3 -->
+  <link name="link3">
+    <visual>
+      <origin xyz="0 0 0.07" rpy="0 0 0"/>
+      <geometry>
+        <cylinder length="0.14" radius="0.01"/>
+      </geometry>
+    </visual>
+  </link>
+
+  <!-- Joint 3 -->
+  <joint name="joint3" type="revolute">
+    <parent link="link2"/>
+    <child link="link3"/>
+    <axis xyz="1 0 0"/>
+    <origin xyz="0 0 0.14" rpy="-1.570796 0 0"/>
+<limit effort="1000.0" lower="0" upper="3.141593" velocity="0.001"/>
+  </joint>
+
+  <!-- Link 4 -->
+  <link name="link4">
+    <visual>
+      <origin xyz="0 0 0.04" rpy="0 0 0"/>
+      <geometry>
+        <cylinder length="0.08" radius="0.01"/>
+      </geometry>
+    </visual>
+  </link>
+
+  <!-- Joint 4 -->
+  <joint name="joint4" type="revolute">
+    <parent link="link3"/>
+    <child link="link4"/>
+    <axis xyz="1 0 0"/>
+    <origin xyz="0 0 0.14" rpy="-1.570796 0 0"/>
+<limit effort="1000.0" lower="0" upper="3.141593" velocity="0.001"/>
+  </joint>
+
+  <!-- Gripper -->
+  <link name="gripper">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <cylinder length="0" radius="0.01"/>
+      </geometry>
+    </visual>
+  </link>
+
+<!-- End-Effector
+  <joint name="endeff" type="revolute">
+    <parent link="link4"/>
+<child link="gripper"/>
+    <axis xyz="1 0 0"/>
+    <origin xyz="0 0 0.08" rpy="-1.570796 0 0"/>
+<limit effort="1000.0" lower="0" upper="3.141593" velocity="0.001"/>
+  </joint>
+-->
+</robot>
