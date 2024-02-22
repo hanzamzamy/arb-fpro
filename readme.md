@@ -24,6 +24,13 @@ ARb is a robotic arm with 4 degrees of freedom. It is designed to be used in a v
   - IKPy -> Inverse Kinematics
 - Solidworks -> Design
 - KiCad -> PCB Design
+## Expenditure
+[Rincian_Anggaran.pdf](https://github.com/hanzamzamy/arb-fpro/blob/master/Rincian_Anggaran.pdf)
+## Documentation
+[Video Demo.mp4](https://github.com/hanzamzamy/arb-fpro/blob/master/Dokumentasi/Video%20Demo.mp4)
+[Robot.jpg](https://github.com/hanzamzamy/arb-fpro/blob/master/Dokumentasi/Barang%20e.jpg)
+[Photo1.jpg](https://github.com/hanzamzamy/arb-fpro/blob/master/Dokumentasi/1.jpg)
+[Photo2.jpg](https://github.com/hanzamzamy/arb-fpro/blob/master/Dokumentasi/1.jpg)
 ## Team
 - Mechanical - [Silvia Nur Aziza]()
 - Electrical - [Rayhan Rizqi Zamzamy](https://github.com/hanzamzamy)
