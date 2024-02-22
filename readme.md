@@ -26,5 +26,5 @@ ARb is a robotic arm with 4 degrees of freedom. It is designed to be used in a v
 - KiCad -> PCB Design
 ## Team
 - Mechanical - [Silvia Nur Aziza]()
-- Electrical - [Rayhan Rizqi Zamzamy](github.com/hanzamzamy)
-- Programming - [Nabiel Nizar Anwari](github.com/bielnzar)
+- Electrical - [Rayhan Rizqi Zamzamy](https://github.com/hanzamzamy)
+- Programming - [Nabiel Nizar Anwari](https://github.com/bielnzar)
